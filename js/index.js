@@ -71,11 +71,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
             end: () => "+=" + (window.innerHeight * 3),
         }
     })
-
-    gsap.to('#welcome-figure',{
-        width: "100vw",
-        height: "100vh",
-        duration: 4
-    })
-
 })

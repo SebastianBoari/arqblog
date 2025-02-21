@@ -1,0 +1,190 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    /* overflow-x: hidden; */
+}
+
+body{
+    font-family: "Open Sans", serif;
+}
+
+.header {
+    padding: 16px;
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    z-index: 10;
+    background-color: white; 
+
+    .header_navbar {
+        padding: 16px;
+        background-color: inherit;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            list-style: none;
+
+            .navbar_item {
+                .navbar_item-link {
+                    position: relative;
+                    padding: 8px 16px;
+                    font-size: 14px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    transition: .3s;
+                    color: black;
+                    
+                    &:visited{
+                        color: inherit;
+                    }
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 28px;
+                        border-bottom: solid 1px black;
+                        width: 0%;
+                        transition: .3s;
+                    }
+
+                    &:hover::before{
+                        width: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.project{
+    width: 100%;
+    height: 300vh;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .project_figure{
+        background-color: black;
+        height: 100vh!important;
+
+        .project_figure-img{
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+    }
+
+    .project_article{
+        .project_article-item{
+            width: 100%;
+            height: 100vh;
+
+            display: grid;
+            place-items: center;
+
+            .container{
+                display: grid;
+                gap: 32px;
+                width: 70%;
+                .article_header{
+                    .article_header-title{
+                        font-size: 3.6em;
+                        font-weight: 700;
+                    }
+                }
+
+                .article_description{
+                    display: grid;
+                    gap: 32px;
+                    .article_description-text{
+                        line-height: 1.8em;
+                        font-size: 1.2em;
+                        color: dimgray;
+                        text-transform: uppercase;
+                    }
+
+                    .article_description-figure{
+                        transition: .3s;
+
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        &:hover{
+                            scale: 1.05;
+                        }
+                    }
+                }
+            }            
+        }
+
+        .article-2{
+            .container{
+                .article_description{
+                    .article_description-text{
+                        color: white;
+                    }                
+                }
+            }     
+        }
+    }
+}
+
+.gallery{
+    .gallery_header{
+        display: grid;
+        place-items: center;
+        padding: 6.4rem 0rem;
+        .gallery_header-title{
+            font-size: 3.6em;
+            font-weight: 700;
+        }
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+      
+    .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+    
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 800px) {
+        .column {
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+      
+    @media screen and (max-width: 600px) {
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+}
