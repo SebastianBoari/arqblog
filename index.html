@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/glightbox.min.css">
     <link rel="stylesheet" href="./styles/index.css">
     <title>Arq-blog: Inicio</title>
 </head>
@@ -28,175 +29,232 @@
         </nav>
     </header>
 
-    <div class="dvh-container">
-        <section id="home" class="home">
-            <div class="home_arq">
-                <div class="arq_text">
-                    <h2 class="arq_text-title">ARQ</h2>
-                
-                    <div class="arq_text-services">
-                        <div class="services">
-                            <p class="services_text">Remodelaciones</p>
-                            <p class="services_text">Paisajismo</p>
-                            <p class="services_text">Planos</p>
-                            <p class="services_text">Estilo</p>
-                            <p class="services_text">Diseño</p>
-                            <p class="services_text">Interiorismo</p>
-                            <p class="services_text">Arquitectura</p>
-                            
-                            <p class="services_text">Ampliaciones</p>
-                            <p class="services_text">Reformas</p>
-                            <p class="services_text">Construcción</p>
-                            <p class="services_text">Sustentabilidad </p>
-                            
-                            <p class="services_text">Renders</p>
-                            <p class="services_text">Innovación</p>
-                            <p class="services_text">Tendencias</p>
-                            <p class="services_text">Iluminación</p>
-                        </div>
+    <section id="home" class="home">
+        <div class="home_arq">
+            <div class="arq_text">
+                <h2 class="arq_text-title">ARQ</h2>
+            
+                <div class="arq_text-services">
+                    <div class="services">
+                        <p class="services_text">Remodelaciones</p>
+                        <p class="services_text">Paisajismo</p>
+                        <p class="services_text">Planos</p>
+                        <p class="services_text">Estilo</p>
+                        <p class="services_text">Diseño</p>
+                        <p class="services_text">Interiorismo</p>
+                        <p class="services_text">Arquitectura</p>
+                        
+                        <p class="services_text">Ampliaciones</p>
+                        <p class="services_text">Reformas</p>
+                        <p class="services_text">Construcción</p>
+                        <p class="services_text">Sustentabilidad </p>
+                        
+                        <p class="services_text">Renders</p>
+                        <p class="services_text">Innovación</p>
+                        <p class="services_text">Tendencias</p>
+                        <p class="services_text">Iluminación</p>
                     </div>
                 </div>
-
-                <div class="arq_media">
-                    <img class="arq_media-img" src="./assets/images/imagen-2.jpg" alt="">
-                </div>
             </div>
-    
-            <div class="home_studio">
-                <div class="studio_media">
-                    <img class="studio_media-img" src="./assets/images/imagen-1.jpg" alt="">
-                </div>
-                
-                <div class="studio_text">
-                    <div class="studio_text-services">
-                        <div class="services">
-                            <p class="services_text">Ampliaciones</p>
-                            <p class="services_text">Reformas</p>
-                            <p class="services_text">Construcción</p>
-                            <p class="services_text">Sustentabilidad </p>
-                            
-                            <p class="services_text">Renders</p>
-                            <p class="services_text">Innovación</p>
-                            <p class="services_text">Tendencias</p>
-                            <p class="services_text">Iluminación</p>
 
-                            <p class="services_text">Arquitectura</p>
-                            <p class="services_text">Diseño</p>
-                            <p class="services_text">Interiorismo</p>
-                            <p class="services_text">Remodelaciones</p>
-                            <p class="services_text">Ampliaciones</p>
-                        </div>
-                    </div>
-
-                    <h2 class="studio_text-title">STUDIO</h2>
-                </div>
-            </div>
-        </section>
-    </div> 
-    
-    <!-- <div>
-        <section class="projects" id="projects">
-            <figure class="projects_media">                
-                <img class="projects_media-img projects_media-img-3" src="./assets/images/imagen-5.jpg" alt="">
-
-                <img class="projects_media-img projects_media-img-2" src="./assets/images/imagen-4.jpg" alt="">
-
-                <img class="projects_media-img projects_media-img-1" src="./assets/images/imagen-3.jpg" alt="">
+            <figure class="arq_figure">
+                <img class="arq_figure-img" src="./assets/images/imagen-2.jpg" alt="">
             </figure>
+        </div>
 
-            <div class="projects_container">
-                <article class="project_container" id="project-1">
-                    <div class="project">
-                        <h2 class="project_title">Casa en Cabanillas del Campo</h2>
-                        <p class="project_description">Ubicada en Cabanillas del Campo, España, esta vivienda fue diseñada por el estudio Taller Abierto en 2019. La composición volumétrica enfatiza la relación entre estructura y entorno, con espacios que maximizan funcionalidad y estética. Grandes ventanales y revestimientos naturales favorecen la iluminación y ventilación cruzada.</p>
+        <div class="home_studio">
+            <figure class="studio_figure">
+                <img class="studio_figure-img" src="./assets/images/imagen-1.jpg" alt="">
+            </figure>
+            
+            <div class="studio_text">
+                <div class="studio_text-services">
+                    <div class="services">
+                        <p class="services_text">Ampliaciones</p>
+                        <p class="services_text">Reformas</p>
+                        <p class="services_text">Construcción</p>
+                        <p class="services_text">Sustentabilidad </p>
+                        
+                        <p class="services_text">Renders</p>
+                        <p class="services_text">Innovación</p>
+                        <p class="services_text">Tendencias</p>
+                        <p class="services_text">Iluminación</p>
 
-                        <p class="project_description">La combinación de tonos claros y madera natural crea un ambiente cálido y contemporáneo. Aberturas estratégicas generan una interacción fluida con el paisaje, permitiendo que la construcción se adapte orgánicamente a su contexto. La fotografía de Montse Zamorano captura la atmósfera serena y equilibrada del proyecto.</p>
-
-                        <a class="project_button" href="/pages/projects/project-1.html">Ver más</a>
+                        <p class="services_text">Arquitectura</p>
+                        <p class="services_text">Diseño</p>
+                        <p class="services_text">Interiorismo</p>
+                        <p class="services_text">Remodelaciones</p>
+                        <p class="services_text">Ampliaciones</p>
                     </div>
-                </article>
+                </div>
 
-                <article class="project_container" id="project-2">
-                    <div class="project">
-                        <h2 class="project_title">Casa Santuario. Palo Alto, California</h2>
-                        <p class="project_description">En el corazón de Palo Alto, California, se encuentra la Casa Santuario, una obra maestra de la arquitectura contemporánea diseñada por Feldman Architecture. Completada en 2019, esta residencia de 398 m² es un refugio de serenidad y sofisticación, donde la naturaleza y el diseño se entrelazan en perfecta armonía. La fotografía de Joe Fletcher captura la esencia de este espacio, destacando su integración con el entorno natural y su enfoque en la luz y la textura.</p>
-
-                        <p class="project_description">La Casa Santuario no es solo un hogar; es una experiencia sensorial. Cada rincón ha sido meticulosamente diseñado para ofrecer una conexión profunda con el entorno, desde los amplios ventanales que enmarcan las vistas del jardín hasta los materiales naturales que aportan calidez y autenticidad. Es un lugar donde la arquitectura y la naturaleza se fusionan, creando un santuario de paz y belleza.</p>
-
-                        <a class="project_button" href="/pages/projects/project-2.html">Ver más</a>
-                    </div>
-                </article>
-
-                <article class="project_container" id="project-3">
-                    <div class="project">
-                        <h2 class="project_title">Casa Everlinks</h2>
-
-                        <p class="project_description">Ubicada en la serena localidad de Luján, Argentina, la Casa Everlinks es una obra maestra de la arquitectura moderna que fusiona elegancia y funcionalidad. Diseñada por el prestigioso estudio Ottone-Victorica Arquitectos, esta residencia de 220 m², completada en 2023, se destaca por su uso innovador de materiales naturales y su integración armoniosa con el entorno. La fotografía de Pedro Yáñez captura magistralmente la esencia de este proyecto, destacando su diseño vanguardista y su conexión con la naturaleza circundante.</p>
-
-                        <p class="project_description">La Casa Everlinks no solo impresiona por su estética, sino también por su enfoque en la sostenibilidad y el bienestar de sus habitantes. Cada rincón de la casa ha sido meticulosamente pensado para ofrecer una experiencia de vida única, donde la luz natural y los espacios abiertos juegan un papel protagonista. Este proyecto es un testimonio del compromiso de sus creadores con la excelencia y la innovación en el campo de la arquitectura.</p>
-                        <a class="project_button" href="/pages/projects/project-3.html">Ver más</a>
-                    </div>
-                </article>
+                <h2 class="studio_text-title">STUDIO</h2>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+    
+    <section class="projects" id="projects">
+        <figure class="projects_media">
+            <a href="./assets/images/imagen-3.jpg" class="glightbox-home-3">
+                <img class="projects_media-img projects_media-img-3" src="./assets/images/imagen-5.jpg" alt="">
+            </a>                
 
-    <div>
-        <section id="about" class="about">
-            <div class="about_container">
-                <article class="about_item">
-                    <figure class="about_item-figure">
-                        <img class="about_item-figure-image" src="./assets/images/imagen-3.jpg" alt="">
+            <a href="./assets/images/imagen-3.jpg" class="glightbox-home-2">
+                <img class="projects_media-img projects_media-img-2" src="./assets/images/imagen-4.jpg" alt="">
+            </a>
+
+            <a href="./assets/images/imagen-3.jpg" class="glightbox-home-1">
+                <img class="projects_media-img projects_media-img-1" src="./assets/images/imagen-3.jpg" alt="">
+            </a>
+        </figure>
+
+        <div class="projects_container">
+            <article class="project_container" id="project-1">
+                <div class="project">
+                    <h2 class="project_title">Casa en Cabanillas del Campo</h2>
+                    
+                    <figure class="project_gallery">
+                        <a href="./assets/project-cabanillas/image-1.jpg" class="glightbox-project-1">
+                            <img class="project_gallery-img" src="./assets/project-cabanillas/image-1.jpg" alt="">
+                        </a>
+
+                        <a href="./assets/project-cabanillas/image-2.jpg" class="glightbox-project-1">
+                            <img class="project_gallery-img" src="./assets/project-cabanillas/image-2.jpg" alt="">
+                        </a>
+
+                        <a href="./assets/project-cabanillas/image-3.jpg" class="glightbox-project-1">
+                            <img class="project_gallery-img" src="./assets/project-cabanillas/image-3.jpg" alt="">
+                        </a>
+
+                        <a href="./assets/project-cabanillas/image-4.jpg" class="glightbox-project-1">
+                            <img class="project_gallery-img" src="./assets/project-cabanillas/image-4.jpg" alt="">
+                        </a>
                     </figure>
 
-                    <div class="about_description">
-                        <div class="about_description-container">
-                            <h2 class="about_description-title">Interiorismo</h2>
+                    <p class="project_description">Ubicada en Cabanillas del Campo, España, esta vivienda fue diseñada por el estudio Taller Abierto en 2019. La composición volumétrica enfatiza la relación entre estructura y entorno, con espacios que maximizan funcionalidad y estética. Grandes ventanales y revestimientos naturales favorecen la iluminación y ventilación cruzada.</p>
 
-                            <p class="about_description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quibusdam ea sint alias provident in? Laboriosam necessitatibus saepe dolores a exercitationem impedit doloremque ipsam, veniam placeat at assumenda repellendus eius.</p>
-    
-                            <p class="about_description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt, accusantium molestias harum provident dolores? Mollitia iure consequatur rem quisquam, obcaecati reiciendis dignissimos, repellendus similique provident possimus, dolorem consequuntur facilis!</p>
-                        </div>
-                    </div>
-                </article>
+                    <p class="project_description">La combinación de tonos claros y madera natural crea un ambiente cálido y contemporáneo. Aberturas estratégicas generan una interacción fluida con el paisaje, permitiendo que la construcción se adapte orgánicamente a su contexto. La fotografía de Montse Zamorano captura la atmósfera serena y equilibrada del proyecto.</p>
 
-                <article class="about_item">
-                    <figure class="about_item-figure">
-                        <img class="about_item-figure-image" src="./assets/images/imagen-4.jpg" alt="">
+                    <a class="project_button" href="/pages/projects/project-1.html">Ver más</a>
+                </div>
+            </article>
+
+            <article class="project_container" id="project-2">
+                <div class="project">
+                    <h2 class="project_title">Casa Santuario. Palo Alto, California</h2>
+          
+                    <figure class="project_gallery">
+                        <a href="./assets/project-santuario/image-1.jpg" class="glightbox-project-2">
+                            <img class="project_gallery-img" src="./assets/project-santuario/image-1.jpg" alt="">
+                        </a>
+
+                        <a href="./assets/project-santuario/image-2.jpg" class="glightbox-project-2">
+                            <img class="project_gallery-img" src="./assets/project-santuario/image-2.jpg" alt="">
+                        </a>
+
+                        <a href="./assets/project-santuario/image-3.jpg" class="glightbox-project-2">
+                            <img class="project_gallery-img" src="./assets/project-santuario/image-3.jpg" alt="">
+                        </a>
+
+                        <a href="./assets/project-santuario/image-4.jpg" class="glightbox-project-2">
+                            <img class="project_gallery-img" src="./assets/project-santuario/image-4.jpg" alt="">
+                        </a>
+                    </figure>
+                    
+                    <p class="project_description">En el corazón de Palo Alto, California, se encuentra la Casa Santuario, una obra maestra de la arquitectura contemporánea diseñada por Feldman Architecture. Completada en 2019, esta residencia de 398 m² es un refugio de serenidad y sofisticación, donde la naturaleza y el diseño se entrelazan en perfecta armonía. La fotografía de Joe Fletcher captura la esencia de este espacio, destacando su integración con el entorno natural y su enfoque en la luz y la textura.</p>
+
+                    <p class="project_description">La Casa Santuario no es solo un hogar; es una experiencia sensorial. Cada rincón ha sido meticulosamente diseñado para ofrecer una conexión profunda con el entorno, desde los amplios ventanales que enmarcan las vistas del jardín hasta los materiales naturales que aportan calidez y autenticidad. Es un lugar donde la arquitectura y la naturaleza se fusionan, creando un santuario de paz y belleza.</p>
+
+                    <a class="project_button" href="/pages/projects/project-2.html">Ver más</a>
+                </div>
+            </article>
+
+            <article class="project_container" id="project-3">
+                <div class="project">
+                    <h2 class="project_title">Casa Everlinks</h2>
+                                        
+                    <figure class="project_gallery">
+                        <a href="./assets/project-everlinks/image-1.jpg" class="glightbox-project-3">
+                            <img class="project_gallery-img" src="./assets/project-everlinks/image-1.jpg" alt="">
+                        </a>
+
+                        <a href="./assets/project-everlinks/image-2.jpg" class="glightbox-project-3">
+                            <img class="project_gallery-img" src="./assets/project-everlinks/image-2.jpg" alt="">
+                        </a>
+
+                        <a href="./assets/project-everlinks/image-3.jpg" class="glightbox-project-3">
+                            <img class="project_gallery-img" src="./assets/project-everlinks/image-3.jpg" alt="">
+                        </a>
+
+                        <a href="./assets/project-everlinks/image-4.jpg" class="glightbox-project-3">
+                            <img class="project_gallery-img" src="./assets/project-everlinks/image-4.jpg" alt="">
+                        </a>
                     </figure>
 
-                    <div class="about_description">
-                        <div class="about_description-container">
-                            <h2 class="about_description-title">Paisajismo</h2>
+                    <p class="project_description">Ubicada en la serena localidad de Luján, Argentina, la Casa Everlinks es una obra maestra de la arquitectura moderna que fusiona elegancia y funcionalidad. Diseñada por el prestigioso estudio Ottone-Victorica Arquitectos, esta residencia de 220 m², completada en 2023, se destaca por su uso innovador de materiales naturales y su integración armoniosa con el entorno. La fotografía de Pedro Yáñez captura magistralmente la esencia de este proyecto, destacando su diseño vanguardista y su conexión con la naturaleza circundante.</p>
 
-                            <p class="about_description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quibusdam ea sint alias provident in? Laboriosam necessitatibus saepe dolores a exercitationem impedit doloremque ipsam, veniam placeat at assumenda repellendus eius.</p>
-    
-                            <p class="about_description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt, accusantium molestias harum provident dolores? Mollitia iure consequatur rem quisquam, obcaecati reiciendis dignissimos, repellendus similique provident possimus, dolorem consequuntur facilis!</p>
-                        </div>
+                    <p class="project_description">La Casa Everlinks no solo impresiona por su estética, sino también por su enfoque en la sostenibilidad y el bienestar de sus habitantes. Cada rincón de la casa ha sido meticulosamente pensado para ofrecer una experiencia de vida única, donde la luz natural y los espacios abiertos juegan un papel protagonista. Este proyecto es un testimonio del compromiso de sus creadores con la excelencia y la innovación en el campo de la arquitectura.</p>
+                    <a class="project_button" href="/pages/projects/project-3.html">Ver más</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about_container">
+            <article class="about_item">
+                <figure class="about_item-figure">
+                    <img class="about_item-figure-image" src="./assets/images/imagen-3.jpg" alt="">
+                </figure>
+
+                <div class="about_description">
+                    <div class="about_description-container">
+                        <h2 class="about_description-title">Interiorismo</h2>
+
+                        <p class="about_description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quibusdam ea sint alias provident in? Laboriosam necessitatibus saepe dolores a exercitationem impedit doloremque ipsam, veniam placeat at assumenda repellendus eius.</p>
+
+                        <p class="about_description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt, accusantium molestias harum provident dolores? Mollitia iure consequatur rem quisquam, obcaecati reiciendis dignissimos, repellendus similique provident possimus, dolorem consequuntur facilis!</p>
                     </div>
-                </article>
+                </div>
+            </article>
 
-                <article class="about_item">
-                    <figure class="about_item-figure">
-                        <img class="about_item-figure-image" src="./assets/images/imagen-5.jpg" alt="">
-                    </figure>
+            <article class="about_item">
+                <figure class="about_item-figure">
+                    <img class="about_item-figure-image" src="./assets/images/imagen-4.jpg" alt="">
+                </figure>
 
-                    <div class="about_description">
-                        <div class="about_description-container">
-                            <h2 class="about_description-title">Diseño</h2>
+                <div class="about_description">
+                    <div class="about_description-container">
+                        <h2 class="about_description-title">Paisajismo</h2>
 
-                            <p class="about_description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quibusdam ea sint alias provident in? Laboriosam necessitatibus saepe dolores a exercitationem impedit doloremque ipsam, veniam placeat at assumenda repellendus eius.</p>
-    
-                            <p class="about_description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt, accusantium molestias harum provident dolores? Mollitia iure consequatur rem quisquam, obcaecati reiciendis dignissimos, repellendus similique provident possimus, dolorem consequuntur facilis!</p>
-                        </div>
+                        <p class="about_description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quibusdam ea sint alias provident in? Laboriosam necessitatibus saepe dolores a exercitationem impedit doloremque ipsam, veniam placeat at assumenda repellendus eius.</p>
+
+                        <p class="about_description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt, accusantium molestias harum provident dolores? Mollitia iure consequatur rem quisquam, obcaecati reiciendis dignissimos, repellendus similique provident possimus, dolorem consequuntur facilis!</p>
                     </div>
-                </article>
-            </div>
-        </section>
-    </div> -->
+                </div>
+            </article>
 
+            <article class="about_item">
+                <figure class="about_item-figure">
+                    <img class="about_item-figure-image" src="./assets/images/imagen-5.jpg" alt="">
+                </figure>
+
+                <div class="about_description">
+                    <div class="about_description-container">
+                        <h2 class="about_description-title">Diseño</h2>
+
+                        <p class="about_description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quibusdam ea sint alias provident in? Laboriosam necessitatibus saepe dolores a exercitationem impedit doloremque ipsam, veniam placeat at assumenda repellendus eius.</p>
+
+                        <p class="about_description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt, accusantium molestias harum provident dolores? Mollitia iure consequatur rem quisquam, obcaecati reiciendis dignissimos, repellendus similique provident possimus, dolorem consequuntur facilis!</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/glightbox.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>

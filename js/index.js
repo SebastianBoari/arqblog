@@ -35,9 +35,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         wrapText(".studio_text-services")
     })
 
-
-    
-    gsap.registerPlugin(ScrollTrigger) 
+    /**    gsap.registerPlugin(ScrollTrigger) 
 
     gsap.to('.projects_media-img-1',{
         opacity: 0,
@@ -59,16 +57,97 @@ document.addEventListener("DOMContentLoaded", (event) => {
             start: "top top",
             end: () => "+=" + (window.innerHeight),
         }
+    }) */
+
+    gsap.registerPlugin(ScrollTrigger)
+
+    function updateScrollTriggers() {
+        const isMobile = window.innerWidth < 992
+        ScrollTrigger.getAll().forEach(trigger => trigger.kill())
+
+        if (!isMobile) {
+            gsap.to('.projects_media-img-1', {
+                opacity: 0,
+                scrollTrigger: {
+                    trigger: "#project-1",
+                    pin: ".projects_media",
+                    scrub: 2,
+                    start: "top top",
+                    end: () => "+=" + (window.innerHeight),
+                }
+            })
+
+            gsap.to('.projects_media-img-2', {
+                opacity: 0,
+                scrollTrigger: {
+                    trigger: "#project-2",
+                    pin: ".projects_media",
+                    scrub: 2,
+                    start: "top top",
+                    end: () => "+=" + (window.innerHeight),
+                }
+            })
+
+            gsap.to('#about',{
+                x: () => "-=" + (window.innerWidth * 2),
+                scrollTrigger: {
+                    trigger: "#about",
+                    pin: "#about",
+                    scrub: 2,
+                    start: "top top",
+                    end: () => "+=" + (window.innerHeight * 3),
+                }
+            })
+        } else {
+            gsap.to('#about',{
+                x: () => "-=" + (window.innerWidth * 5),
+                scrollTrigger: {
+                    trigger: "#about",
+                    pin: "#about",
+                    scrub: 2,
+                    start: "top top",
+                    end: () => "+=" + (window.innerHeight * 6),
+                }
+            })
+        }
+    }
+
+    updateScrollTriggers()
+    window.addEventListener('resize', updateScrollTriggers)
+
+    const lightboxSingle1 = GLightbox({
+        selector: '.glightbox-home-1',
+        touchNavigation: true,
+        loop: false 
     })
 
-    gsap.to('#about',{
-        x: () => "-=" + (window.innerWidth * 2),
-        scrollTrigger: {
-            trigger: "#about",
-            pin: "#about",
-            scrub: 2,
-            start: "top top",
-            end: () => "+=" + (window.innerHeight * 3),
-        }
+    const lightboxSingle2 = GLightbox({
+        selector: '.glightbox-home-2',
+        touchNavigation: true,
+        loop: false 
+    })
+
+    const lightboxSingle3 = GLightbox({
+        selector: '.glightbox-home-3',
+        touchNavigation: true,
+        loop: false 
+    })
+
+    const lightboxHomeGallery1 = GLightbox({
+        selector: '.glightbox-project-1',
+        touchNavigation: true,
+        loop: true 
+    })
+
+    const lightboxHomeGallery2 = GLightbox({
+        selector: '.glightbox-project-2',
+        touchNavigation: true,
+        loop: true 
+    })
+
+    const lightboxHomeGallery3 = GLightbox({
+        selector: '.glightbox-project-3',
+        touchNavigation: true,
+        loop: true 
     })
 })
