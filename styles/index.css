@@ -432,6 +432,7 @@ body{
         .about_item{
             width: 100vw;
             height: 100vh;
+
             display: grid;
             grid-template-columns: 50% 50%;
             
@@ -477,9 +478,45 @@ body{
         width: 600vw;
 
         .about_container{
+            display: flex;
+            flex-wrap: nowrap;
+
             .about_item{
                 width: 200vw;
-                grid-template-columns: 100dvw 100dvw;
+                grid-template-columns: auto auto;
+
+                .about_item-figure{
+                    height: 100vh;
+                    width: 100vw;
+                    .about_item-figure-image{}
+                }
+
+                .about_description{
+                    height: 100vh;
+                    width: 100vw;
+
+                    display: grid;
+                    place-items: center;
+    
+                    .about_description-container{
+                        max-width: 100%;
+                        padding: 32px;
+                        display: grid;
+                        gap: 32px;
+    
+                        .about_description-title{
+                            font-size: 3.6em;
+                            font-weight: 700;
+                        }
+        
+                        .about_description-text{
+                            line-height: 1.8em;
+                            font-size: 1.2em;
+                            color: dimgray;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
             }
         }
     }

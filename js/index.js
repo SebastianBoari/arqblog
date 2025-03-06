@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     function updateScrollTriggers() {
         const isMobile = window.innerWidth < 992
+        
         ScrollTrigger.getAll().forEach(trigger => trigger.kill())
 
         if (!isMobile) {
@@ -87,29 +88,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
                     end: () => "+=" + (window.innerHeight),
                 }
             })
+        } 
 
-            gsap.to('#about',{
-                x: () => "-=" + (window.innerWidth * 2),
-                scrollTrigger: {
-                    trigger: "#about",
-                    pin: "#about",
-                    scrub: 2,
-                    start: "top top",
-                    end: () => "+=" + (window.innerHeight * 3),
-                }
-            })
-        } else {
-            gsap.to('#about',{
-                x: () => "-=" + (window.innerWidth * 5),
-                scrollTrigger: {
-                    trigger: "#about",
-                    pin: "#about",
-                    scrub: 2,
-                    start: "top top",
-                    end: () => "+=" + (window.innerHeight * 6),
-                }
-            })
-        }
+        gsap.to('#about', {
+            x: () => "-=" + (window.innerWidth * (isMobile ? 5 : 2)),
+            scrollTrigger: {
+                trigger: "#about",
+                pin: "#about",
+                pinSpacing: true,
+                scrub: 2,
+                start: "top top",
+                end: () => "+=" + (window.innerHeight * (isMobile ? 6 : 3)),
+                markers: true,
+            }
+        })
+
+        ScrollTrigger.refresh()
     }
 
     updateScrollTriggers()
