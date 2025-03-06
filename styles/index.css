@@ -402,8 +402,6 @@ body{
     }
 }
 
-@media (max-width: 576px) {}
-
 @media (max-width: 376px) {
     .projects{
         .projects_container{
@@ -538,7 +536,3 @@ body{
     }
     
 }
-
-@media (max-width: 576px) {}
-
-@media (max-width: 376px) {}
