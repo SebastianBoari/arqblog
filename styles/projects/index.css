@@ -7,7 +7,6 @@
 html{
     scroll-behavior: smooth;
     font-size: 62.5%;
-    /* overflow-x: hidden; */
 }
 
 body{
@@ -77,8 +76,7 @@ body{
     grid-template-columns: 50% 50%;
 
     .project_figure{
-        background-color: black;
-        height: 100vh!important;
+        height: 100vh;
 
         .project_figure-img{
             position: absolute;
@@ -141,6 +139,36 @@ body{
                     }                
                 }
             }     
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .project {
+        height: auto;
+        grid-template-columns: auto;
+        gap: 32px;
+
+        .project_figure {
+            display: none;
+        }
+
+        .project_article {
+            padding: 32px 0px;
+
+            .project_article-item {
+                height: fit-content;
+            }
+
+            .article-2 {
+                .container {
+                    .article_description {
+                        .article_description-text {
+                            color: dimgray;
+                        }
+                    }
+                }
+            }
         }
     }
 }

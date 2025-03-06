@@ -35,30 +35,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         wrapText(".studio_text-services")
     })
 
-    /**    gsap.registerPlugin(ScrollTrigger) 
-
-    gsap.to('.projects_media-img-1',{
-        opacity: 0,
-        scrollTrigger: {
-            trigger: "#project-1",
-            pin: ".projects_media",
-            scrub: 2,
-            start: "top top",
-            end: () => "+=" + (window.innerHeight),
-        }
-    })
-
-    gsap.to('.projects_media-img-2',{
-        opacity: 0,
-        scrollTrigger: {
-            trigger: "#project-2",
-            pin: ".projects_media",
-            scrub: 2,
-            start: "top top",
-            end: () => "+=" + (window.innerHeight),
-        }
-    }) */
-
     gsap.registerPlugin(ScrollTrigger)
 
     function updateScrollTriggers() {
@@ -106,7 +82,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 
     updateScrollTriggers()
-
     window.addEventListener('resize', updateScrollTriggers)
 
     const lightboxSingle1 = GLightbox({
