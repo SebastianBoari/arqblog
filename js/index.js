@@ -88,25 +88,26 @@ document.addEventListener("DOMContentLoaded", (event) => {
                     end: () => "+=" + (window.innerHeight),
                 }
             })
+
+            gsap.to('#about', {
+                x: () => "-=" + (window.innerWidth * 2),
+                scrollTrigger: {
+                    trigger: "#about",
+                    pin: "#about",
+                    pinSpacing: true,
+                    scrub: 2,
+                    start: "top top",
+                    end: () => "+=" + (window.innerHeight * 3),
+                }
+            })
         } 
 
-        gsap.to('#about', {
-            x: () => "-=" + (window.innerWidth * (isMobile ? 5 : 2)),
-            scrollTrigger: {
-                trigger: "#about",
-                pin: "#about",
-                pinSpacing: true,
-                scrub: 2,
-                start: "top top",
-                end: () => "+=" + (window.innerHeight * (isMobile ? 6 : 3)),
-                markers: true,
-            }
-        })
 
         ScrollTrigger.refresh()
     }
 
     updateScrollTriggers()
+
     window.addEventListener('resize', updateScrollTriggers)
 
     const lightboxSingle1 = GLightbox({

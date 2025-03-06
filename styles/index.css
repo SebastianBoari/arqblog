@@ -474,33 +474,46 @@ body{
 
 @media (max-width: 992px) {
     .about{
-        height: 100vh;
-        width: 600vw;
+        height: auto;
+        width: 100vw;
 
         .about_container{
+            height: auto;
+            
             display: flex;
-            flex-wrap: nowrap;
+            flex-flow: column;
+            justify-content: space-between;
 
             .about_item{
-                width: 200vw;
-                grid-template-columns: auto auto;
+                height: auto;
+                width: 100vw;
+
+                grid-template-columns: auto;
+                grid-template-rows: auto auto;
 
                 .about_item-figure{
-                    height: 100vh;
+                    height: 50vh;
                     width: 100vw;
+
+                    grid-row: 1/2;
+
                     .about_item-figure-image{}
                 }
 
                 .about_description{
-                    height: 100vh;
+                    height: max-content;
                     width: 100vw;
+
+                    grid-row: 3/4;
 
                     display: grid;
                     place-items: center;
     
                     .about_description-container{
                         max-width: 100%;
+                        
                         padding: 32px;
+
                         display: grid;
                         gap: 32px;
     
@@ -517,6 +530,9 @@ body{
                         }
                     }
                 }
+            }
+            .about_item-bottom{
+                margin-bottom: 10vh;
             }
         }
     }
